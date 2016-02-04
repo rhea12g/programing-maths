@@ -1,1 +1,1 @@
-# programing-maths
+# programming-math-problems
