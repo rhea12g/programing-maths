@@ -26,21 +26,15 @@ Input:
 Output:
 11
 '''
-
-import sys
-
 def solve():
-    input=[]
-    t = sys.stdin.readline()
+    t = raw_input()
     c=0
-    while (c < int(t.strip()) ):
-        line = sys.stdin.readline()
-        input.append(line.strip())
-        c = int(c) +1
     sum=0
-    for i in range(len(input)):
-        if int(input[i]) > 0:
-                sum = sum + int(input[i])
+    while (c < int(t.strip()) ):
+        line = raw_input()
+        if int(line.strip()) >0:
+            sum = sum + int(line.strip())
+        c = int(c) +1
     print sum
 
 if __name__=='__main__':
